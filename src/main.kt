@@ -23,7 +23,7 @@ fun main() {
     }
     al+=0
     j+=0
-    
+
     println(al.toString())
     println(j.toString())
 }
