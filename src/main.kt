@@ -1,12 +1,20 @@
 //v2
 
 fun main() {
-    val matrix = arrayOf(
+  /*  val matrix = arrayOf(
         intArrayOf(0,5,2,0,0),
         intArrayOf(0,0,7,0,0),
         intArrayOf(0,4,0,6,1),
         intArrayOf(0,3,0,0,9),
         intArrayOf(0,0,0,0,0)
+    ) */
+    val matrix = arrayOf(
+        intArrayOf(0,4,0,0,0,0),
+        intArrayOf(0,0,4,0,0,0),
+        intArrayOf(0,0,0,0,2,5),
+        intArrayOf(2,0,0,1,6,0),
+        intArrayOf(0,0,0,0,0,0),
+        intArrayOf(0,7,5,8,0,0)
     )
     val al= mutableListOf<Int>()
     val j = mutableListOf<Int>()
