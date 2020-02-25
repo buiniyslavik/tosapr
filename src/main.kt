@@ -1,4 +1,30 @@
 //v2
+fun unpack(x:Int, y: Int): Int {
+    var r = 0
+
+    val ta = arrayOf(
+        intArrayOf(2,3,0),
+        intArrayOf(3,0,0),
+        intArrayOf(2,4,5),
+        intArrayOf(2,5,0),
+        intArrayOf(0,0,0)
+    )
+    val tc = arrayOf(
+        intArrayOf(5,2,0),
+        intArrayOf(7,0,0),
+        intArrayOf(4,6,1),
+        intArrayOf(3,9,0),
+        intArrayOf(0,0,0)
+    )
+    val row = ta[x-1]
+    val cell = row.indexOf(y)
+    if(cell!=-1) {
+        r = tc[x-1][cell]
+    }
+    else println("not found")
+    return r
+}
+
 
 fun pack() {
   /*  val matrix = arrayOf(
@@ -37,6 +63,11 @@ fun pack() {
 }
 
 fun main() {
-    pack()
-    //unpack()
+    //pack()
+    println("enter x [0]")
+    val x = readLine()?.toInt()?:0
+    println("enter y [0]")
+    val y = readLine()?.toInt()?:1
+    println(unpack(x,y))
+
 }
