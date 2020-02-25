@@ -1,6 +1,6 @@
 //v2
 
-fun main() {
+fun pack() {
   /*  val matrix = arrayOf(
         intArrayOf(0,5,2,0,0),
         intArrayOf(0,0,7,0,0),
@@ -34,4 +34,9 @@ fun main() {
 
     println(al.toString())
     println(j.toString())
+}
+
+fun main() {
+    pack()
+    //unpack()
 }
