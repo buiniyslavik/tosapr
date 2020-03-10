@@ -64,10 +64,10 @@ fun pack() {
 
 fun main() {
     //pack()
-    println("enter x [0]")
-    val x = readLine()?.toInt()?:0
-    println("enter y [0]")
-    val y = readLine()?.toInt()?:1
-    println(unpack(x,y))
-
+   // println("enter x [0]")
+   // val x = readLine()?.toInt()?:0
+   // println("enter y [0]")
+   // val y = readLine()?.toInt()?:1
+   // println(unpack(x,y))
+    println(selSort.sort(arrayOf(3,45,12,44,57,1,22).toIntArray()).toList().toString())
 }
