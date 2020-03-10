@@ -15,11 +15,11 @@ fun unpack(x:Int, y: Int): Int {
         intArrayOf(4,6,1),
         intArrayOf(3,9,0),
         intArrayOf(0,0,0)
-    )
-    val row = ta[x-1]
-    val cell = row.indexOf(y)
-    if(cell!=-1) {
-        r = tc[x-1][cell]
+        )
+        val row = ta[x-1]
+        val cell = row.indexOf(y)
+        if(cell!=-1) {
+            r = tc[x-1][cell]
     }
     else println("not found")
     return r
